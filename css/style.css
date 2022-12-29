@@ -1,8 +1,85 @@
-.header{
-height: 700px;
-background: #EEEFF1;
+@import "global.css";
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
-.footer{
-  background: #34547A;
-  height: 151px;
+
+.design-and-nav {
+  height: 700px;
+  background: #eeeff1;
 }
+
+.design-and-nav-header {
+  padding-top: 57px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.design-and-nav-header__logo {
+  background: url(/img/WD.png) no-repeat;
+  height: 60px;
+  width: 96px;
+}
+
+.design-and-nav-header__navigation {
+  display: flex;
+  width: 611px;
+}
+
+.design-and-nav-header__link-item {
+  margin-left: 42px;
+  text-decoration: none;
+  color: black;
+}
+
+.design-and-nav-header__link-item--active {
+  color: #34547a;
+}
+
+.design-and-nav-main {
+  display: flex;
+}
+
+.design-and-nav-main__computer{
+  max-width: 357px;
+  max-height: 233,7px;
+}
+
+.design-and-nav-main__info{
+  margin-left: 130px;
+  width: 513px;
+  height: 67px;
+}
+
+.design-and-nav-main__title{
+  font-size: 48px;
+  line-height: 78.75px;
+  
+}
+
+.design-and-nav-main__title-text{
+  text-indent: 0px;
+  text-align: left;
+}
+
+/* .about__me {
+  height: 336px;
+}
+
+.how__many__projects {
+  font-size: 20px;
+} */
+/* 
+.projects {
+  background: #34547a;
+  height: 250px;
+}
+
+.projects_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto auto;
+} */
