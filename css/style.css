@@ -1,7 +1,6 @@
 @import "global.css";
 
 .design-and-nav {
-  height: 687px;
   background: #eeeff1;
 }
 
@@ -30,6 +29,7 @@
   color: black;
   line-height: 26px;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .design-and-nav-header__link-item--active {
@@ -50,8 +50,8 @@
 
 .design-and-nav-main__info {
   max-width: 513px;
-  height: 297px;
   margin-top: -10px;
+  margin-bottom: 146px;
 }
 
 .design-and-nav-main__title {
@@ -69,12 +69,12 @@
   margin-right: 0;
 }
 
-.about-me {
-  height: 366px;
-}
-
 .about-me__title {
   padding-top: 119px;
+}
+
+.about-me__title-text {
+  padding-bottom: 100px;
 }
 
 .how__many__projects {
@@ -84,7 +84,7 @@
 .projects {
   background: #34547a;
   padding: 100px 0;
-
+  margin-bottom: 102px;
 }
 
 .projects__container {
@@ -92,6 +92,155 @@
   justify-content: space-around;
 }
 
-.img {
-  display: block;
+.my-skills {
+  margin-bottom: 101px;
+}
+
+.my-skills__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-skills__title {
+  margin-top: 102px;
+  text-align: start;
+}
+
+.my-skills__adobe-photoshop {
+  margin-bottom: 20px;
+}
+
+.my-skills__line {
+  height: 4px;
+  width: 450px;
+  background: #c4c4c4;
+  margin-bottom: 30px;
+}
+
+.my-skills__line-blue {
+  height: 4px;
+  width: 78%;
+  background: #34547a;
+}
+
+.my-skills__portrait {
+  max-width: 555px;
+  max-height: 445px;
+}
+
+.how-i-work {
+  padding-bottom: 10px;
+  background: #eeeff1;
+  padding: 100px 0;
+}
+
+.how-i-work__coding-video {
+  background: url(/img/coding.png) 0 0/ 100% auto;
+  max-width: 1110px;
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 57px auto 0 auto;
+}
+
+.examples {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  display: grid;
+  gap: 0;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
+.examples__notes {
+  /* border: 5px solid red; */
+}
+.examples__notes:hover {
+  border: 5px solid green;
+  background: url(/img/eye.svg);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.examples__computers:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(52, 84, 122, 0.8),
+    rgba(52, 84, 122, 0.8)
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.want-website {
+  background: #eeeff1;
+  padding: 100px 0;
+}
+
+.want-website__form {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.want-website__input-my-name {
+  width: 255px;
+  height: 50px;
+}
+
+.want-website__input-my-email {
+  width: 255px;
+  height: 50px;
+}
+
+.want-website__textarea-sms {
+  margin: 0 auto 50px auto;
+}
+
+.want-website__form-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background: #34547a;
+  padding: 50px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__name {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.footer__right {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+@media (min-width: 320px) and (max-width: 1279px) {
+  .content-limeter {
+    max-width: 375px;
+  }
+  .design-and-nav-header__navigation {
+    display: none;
+  }
+
+  .design-and-nav-main {
+    flex-direction: column;
+  }
 }
