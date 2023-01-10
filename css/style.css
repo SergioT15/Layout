@@ -328,6 +328,27 @@
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
   }
 
+  .examples__computers {
+    width: 960px;
+  }
+  
+  .examples__notes--third{
+    order: 1;
+  }
+  
+  .examples__computers--four{
+    order: 2;
+  }
+  
+  .examples__computers--fifth{
+    order: 3;
+  }
+  
+  .examples__notes--sixth{
+    order: 4;
+  }
+  
+
   .want-website__form {
     flex-wrap: wrap;
   }
