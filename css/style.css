@@ -12,7 +12,7 @@
 }
 
 .design-and-nav-header__logo {
-  background: url(/img/WD.png) no-repeat;
+  background: url(/img/WD.svg) no-repeat;
   height: 60px;
   width: 96px;
   margin-left: 66px;
@@ -69,11 +69,8 @@
   margin-right: 0;
 }
 
-.about-me__title {
+.about-me {
   padding-top: 119px;
-}
-
-.about-me__title-text {
   padding-bottom: 100px;
 }
 
@@ -125,11 +122,12 @@
 
 .my-skills__portrait {
   max-width: 555px;
+  width: 100%;
   max-height: 445px;
+  height: 100%;
 }
 
 .how-i-work {
-  padding-bottom: 10px;
   background: #eeeff1;
   padding: 100px 0;
 }
@@ -139,7 +137,6 @@
   max-width: 1110px;
   width: 100%;
   height: 600px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,9 +151,6 @@
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
 }
 
-.examples__notes {
-  /* border: 5px solid red; */
-}
 .examples__notes:hover {
   border: 5px solid green;
   background: url(/img/eye.svg);
@@ -183,7 +177,7 @@
   margin-top: 65px;
   margin-bottom: 20px;
   display: flex;
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -205,6 +199,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.want-website__textarea-sms {
+  width: 540px;
 }
 
 .footer {
@@ -232,15 +230,130 @@
   line-height: 21px;
 }
 
+.footer__vk {
+  display: flex;
+  gap: 22px;
+}
+
 @media (min-width: 320px) and (max-width: 1279px) {
   .content-limeter {
-    max-width: 375px;
+    max-width: 340px;
   }
+
+  .title-lorem {
+    line-height: 120%;
+    text-indent: 0;
+    width: 322px;
+  }
+
+  .button-blue {
+    margin: 0 auto;
+  }
+
+  .design-and-nav-header {
+    padding-top: 22px;
+    margin-bottom: 36px;
+  }
+
+  .design-and-nav-header__logo {
+    margin-left: 0px;
+  }
+
   .design-and-nav-header__navigation {
     display: none;
   }
 
+  .design-and-nav-main__title {
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 51px;
+    margin-bottom: 44px;
+  }
+
+  .design-and-nav-main__title-text {
+    text-indent: 0px;
+    text-align: center;
+    margin-bottom: 51px;
+  }
+
   .design-and-nav-main {
     flex-direction: column;
+  }
+
+  .design-and-nav-main__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 95px;
+  }
+
+  .about-me {
+    padding-top: 91px;
+    padding-bottom: 0px;
+  }
+
+  .projects {
+    padding: 75px 0;
+    margin: 82px 0;
+  }
+
+  .projects__container {
+    flex-wrap: wrap;
+    row-gap: 90px;
+    column-gap: 57px;
+  }
+
+  .my-skills__container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .my-skills__title {
+    margin-top: 98px;
+    text-align: center;
+  }
+
+  .my-skills__line {
+    width: 339px;
+  }
+
+  .how-i-work {
+    padding: 93px 0;
+  }
+
+  .how-i-work__coding-video {
+    height: 185px;
+  }
+
+  .examples {
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  }
+
+  .want-website__form {
+    flex-wrap: wrap;
+  }
+
+  .want-website__input-my-name {
+    width: 100%;
+  }
+
+  .want-website__input-my-email {
+    width: 100%;
+  }
+
+  .want-website__textarea-sms {
+    width: 100%;
+  }
+
+  .footer__container {
+    flex-wrap: wrap;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__name {
+    text-align: center;
   }
 }

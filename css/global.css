@@ -8,17 +8,29 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -53,7 +65,8 @@ img {
 .title-lorem {
   text-align: center;
   font-weight: 400;
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   margin: 0 auto;
   line-height: 26.25px;
   color: #727272;
