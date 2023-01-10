@@ -155,17 +155,6 @@
   position: relative;
 }
 
-/* .examples__notes:hover {
-  border: 5px solid green;
-  background: url(/img/eye.svg);
-  opacity: 0.5;
-  z-index: 2;
-} */
-
-img {
-  float: left;
-}
-
 .examples__eye:hover::before {
   content: "";
   position: absolute;
