@@ -8,7 +8,6 @@
   padding-top: 57px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 127px;
 }
 
 .design-and-nav-header__logo {
@@ -39,11 +38,14 @@
 
 .design-and-nav-main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding-top: 127px;
+  padding-bottom: 146px;
 }
 
 .design-and-nav-main__computer {
   max-width: 357px;
+  width: 100%;
   max-height: 234px;
   margin-top: 21px;
 }
@@ -51,7 +53,7 @@
 .design-and-nav-main__info {
   max-width: 513px;
   margin-top: -10px;
-  margin-bottom: 146px;
+  margin-left: 130px;
 }
 
 .design-and-nav-main__title {
@@ -81,7 +83,6 @@
 .projects {
   background: #34547a;
   padding: 100px 0;
-  margin-bottom: 102px;
 }
 
 .projects__container {
@@ -89,13 +90,31 @@
   justify-content: space-around;
 }
 
+.projects__full {
+  display: flex;
+}
+
+.projects__block {
+  color: white;
+  margin-left: 20px;
+}
+
+.projects__numbers {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
 .my-skills {
-  margin-bottom: 101px;
+  padding-bottom: 101px;
 }
 
 .my-skills__container {
   display: flex;
   justify-content: space-between;
+  padding-top: 102px;
+  gap: 20px;
 }
 
 .my-skills__title {
@@ -109,7 +128,6 @@
 
 .my-skills__line {
   height: 4px;
-  width: 450px;
   background: #c4c4c4;
   margin-bottom: 30px;
 }
@@ -133,9 +151,11 @@
 }
 
 .how-i-work__coding-video {
-  background: url(/img/coding.png) 0 0/ 100% auto;
+  background: url(/img/coding.png) no-repeat;
   max-width: 1110px;
   width: 100%;
+  background-size: contain;
+  background-position: center;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -199,25 +219,39 @@
 .want-website__input-my-name {
   width: 255px;
   height: 50px;
+  border: 0;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #5f5d5d;
 }
 
 .want-website__input-my-email {
   width: 255px;
   height: 50px;
+  border: 0;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #5f5d5d;
 }
 
 .want-website__textarea-sms {
   margin: 0 auto 50px auto;
+  border: 0;
+  padding: 20px;
+  resize: none;
+  font-size: 14px;
+  line-height: 23px;
+  color: #5f5d5d;
+  width: 540px;
+  height: 175px;
 }
 
 .want-website__form-post {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.want-website__textarea-sms {
-  width: 540px;
 }
 
 .footer {
@@ -250,15 +284,93 @@
   gap: 22px;
 }
 
-@media (min-width: 320px) and (max-width: 1279px) {
+.my-skills__enumeration {
+  max-width: 450px;
+  width: 100%;
+}
+
+@media (min-width: 1071px) and (max-width: 1180px) {
   .content-limeter {
-    max-width: 340px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 728px) and (max-width: 1070px) {
+  .content-limeter {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .button-blue {
+    margin: 0 auto;
+  }
+
+  .projects__container {
+    max-width: 700px;
+  }
+
+  .design-and-nav-main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .design-and-nav-main__info {
+    margin-left: 0;
+  }
+
+  .projects__container {
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+  }
+
+  .how-i-work__coding-video {
+    height: 560px;
+  }
+
+  .my-skills__container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .my-skills__title {
+    text-align: center;
+  }
+}
+
+@media (min-width: 727px) and (max-width: 949px) {
+  .design-and-nav-main__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .design-and-nav-main__title {
+    text-align: center;
+  }
+
+  .how-i-work__coding-video {
+    height: 490px;
+  }
+
+  .design-and-nav-header__link-item {
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 727px) {
+  .content-limeter {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .title-lorem {
     line-height: 120%;
     text-indent: 0;
-    width: 322px;
+    width: 100%;
   }
 
   .button-blue {
@@ -294,12 +406,13 @@
 
   .design-and-nav-main {
     flex-direction: column;
+    align-items: center;
   }
 
   .design-and-nav-main__info {
     display: flex;
     flex-direction: column;
-    margin-bottom: 95px;
+    margin-left: 0;
   }
 
   .about-me {
@@ -315,11 +428,13 @@
   .projects__container {
     flex-wrap: wrap;
     row-gap: 90px;
-    column-gap: 57px;
+    column-gap: 28px;
+    max-width: 340px;
   }
 
   .my-skills__container {
     flex-wrap: wrap-reverse;
+    justify-content: center;
   }
 
   .my-skills__title {
@@ -327,16 +442,12 @@
     text-align: center;
   }
 
-  .my-skills__line {
-    width: 339px;
-  }
-
   .how-i-work {
     padding: 93px 0;
   }
 
   .how-i-work__coding-video {
-    height: 185px;
+    height: 380px;
   }
 
   .how-i-work__play {
@@ -372,15 +483,15 @@
   }
 
   .want-website__input-my-name {
-    width: 100%;
+    width: 90%;
   }
 
   .want-website__input-my-email {
-    width: 100%;
+    width: 90%;
   }
 
   .want-website__textarea-sms {
-    width: 100%;
+    width: 90%;
   }
 
   .footer__container {
@@ -394,5 +505,43 @@
 
   .footer__name {
     text-align: center;
+  }
+}
+
+@media (min-width: 341px) and (max-width: 500px) {
+  .how-i-work__coding-video {
+    height: 250px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 340px) {
+  .projects__container {
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px 0;
+  }
+  .content-limeter {
+    max-width: 300px;
+    padding: 0 10px;
+  }
+
+  .how-i-work__coding-video {
+    height: 150px;
+  }
+
+  .design-and-nav-header__logo {
+    margin-left: 0px;
+  }
+
+  .design-and-nav-main {
+    padding: 20px 0;
+  }
+
+  .projects__not-visibl {
+    display: none;
+  }
+
+  .projects__container {
+    gap: 25px;
   }
 }

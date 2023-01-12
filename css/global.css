@@ -42,15 +42,14 @@ img {
 }
 
 .content-limeter {
-  max-width: 1152px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
 .button-blue {
   background: #34547a;
   color: #ffffff;
-  width: 225px;
-  height: 65px;
+  padding: 25px 40px;
   line-height: 26.25px;
   text-transform: uppercase;
   border: none;
